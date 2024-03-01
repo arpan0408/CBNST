@@ -3,12 +3,11 @@ which is close to roots, using the following formula.
 
                          x1 = x0 – f(x0) / f'(x0)
 
-                              where,
-
+where,
 x0 is the initial value of x,
 f(x0) is the value of the equation at initial value, and f'(x0) is the value of the first order derivative of the equation or function at the initial value x0. Note : f'(x0) should not be zero else the fraction part of the formula will change to infinity which means f(x) should not be a constant function.
 
-                                                                                                                          Example : For the initial value x0 = 3,approximate the root of f(x) = x3 + 3x + 1.
+Example : For the initial value x0 = 3,approximate the root of f(x) = x3 + 3x + 1.
 
 Solution :
 
@@ -21,7 +20,7 @@ Solution :
 
                                    f(x0) = f(3) = 27 + 3(3) + 1 = 37
 
-                 Using Newton Raphson method :
+Using Newton Raphson method :
 
     x1 = x0 – f(x0) / f'(x0) 
         = 3 – 37 / 30 = 1.767
