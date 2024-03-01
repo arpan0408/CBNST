@@ -28,7 +28,7 @@ void main()
 
     float fx0 = f(x0),
           fx1 = f(x1);
-\
+
     int i = 0;
     while (i < 10)
     {
