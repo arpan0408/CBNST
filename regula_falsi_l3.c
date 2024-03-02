@@ -8,7 +8,7 @@ float f(float x)
 
 float mid(float x0, float x1)
 {
-    return ((x1*f(x0)-x0*f(x1))/(f(x0)-f(x1)));
+    return ((x0*f(x1)-x1*f(x0))/(f(x1)-f(x0)));
 }
 
 void main()
