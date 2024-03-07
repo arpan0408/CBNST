@@ -10,8 +10,7 @@ void main()
     printf("\nEnter the value = ");
     scanf("%f",&x);
     int i=0;
-    while(i<10
-    )
+    while(i<10)
     {
         x = nr(x);
         printf("\nResult = %f",x);
