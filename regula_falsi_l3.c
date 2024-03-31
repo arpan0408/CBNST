@@ -8,7 +8,7 @@ float f(float x)
 
 float mid(float x0, float x1)
 {
-    return ((x0*f(x1)-x1*f(x0))/(f(x1)-f(x0)));
+    return ((x0 * f(x1) - x1 * f(x0)) / (f(x1) - f(x0)));
 }
 
 void main()
@@ -32,6 +32,7 @@ void main()
     int i = 0;
     while (i < 10)
     {
+        printf("\n\n%d approximation.", i);
         float x2 = mid(x0, x1), fx2;
 
         fx0 = f(x0);

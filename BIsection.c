@@ -33,10 +33,12 @@ void main()
     }
     printf("\nf(x1) = %f\nf(x2) = %f", fx1, fx2);
 
-    float fx3,i=0;
+    float fx3;
+    int i=0;
 
     while (i<20)
     {
+        printf("%d approximation.",i);
         float x3 = midpoint(x1, x2);
         fx1 = fx(x1);
         fx2 = fx(x2);
@@ -50,7 +52,7 @@ void main()
         else if ((fx2 * fx3) < 0)
             x1 = x3;
 
-        printf("\nx1 = %f\nx2 = %f\nx3 = %f", x1, x2, x3);
+        printf("\nx1 = %f\nx2 = %f\nx3 = %f\n\n", x1, x2, x3);
 
         i++;
     }
