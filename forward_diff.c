@@ -41,7 +41,7 @@ int main()
 
     printf("\tU = %.4f",u);
 
-    int f = 1,u1=u;
+    int f = 1;
     for(i=2;i<=6;i++)
     {
         f *= i;
