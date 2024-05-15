@@ -1,18 +1,17 @@
-// Trapezoidal equation [creating table from equation]
-
 #include <stdio.h>
 #include<math.h>
 
 float method(float h, float y[], int n)
 {
-    float sum = 0;
+    float th=0,nth=0;
     for (int i = 1; i < n; i++)
     {
-        sum += y[i];
+        if(i%3==0)
+            th += y[i];
+        else
+            nth += y[i];
     }
-    sum = (h / 2) * ((y[0] + y[n]) + (2 * sum));
-
-    return sum;
+    return (((3*h ) / 8) * ((y[0] + y[n]) + (3*nth) + (2*th)));
 }
 
 int main()
@@ -40,7 +39,7 @@ int main()
     for(i=0;i<=n;i++)
         printf("\n%.4f\t%.4f",x[i],y[i]);
 
-    printf("\nTrapezoidal Result: %f",method(h,y,n));
+    printf("\nSimpson 1/3 Result: %.5f",method(h,y,n));
 
     return 0;
 }
