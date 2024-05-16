@@ -3,7 +3,7 @@
 int main()
 {
     int r;
-    printf("\nEnter the value = ");
+    printf("\nEnter the rows = ");
     scanf("%d", &r);
     int x[r], y[r], i, j, xp;
     for (j = 0; j < r; j++)

@@ -39,7 +39,7 @@ int main()
     for(i=0;i<=n;i++)
         printf("\n%.4f\t%.4f",x[i],y[i]);
 
-    printf("\nSimpson 1/3 Result: %.5f",method(h,y,n));
+    printf("\nSimpson 3/8 Result: %.5f",method(h,y,n));
 
     return 0;
 }
